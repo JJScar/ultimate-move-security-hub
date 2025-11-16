@@ -1,19 +1,21 @@
 # Cetus Hack
 ## Summary
-**Loss:** ≈ US$223 million
-**Root Cause:** Overflow-check bypass in math library `checked_shlw`, allowing massive liquidity for minimal token deposit. 
+**Loss:** ≈ $223 million <br>
+**Root Cause:** Overflow-check bypass in math library `checked_shlw`, allowing massive liquidity for minimal token deposit. <br>
 
-This document is about learning to spot similar vulnerabilities - not repeating existing deep dives. If you wish to deepen your understanding please do further research. Look at the credit section below to learn more. 
-
+**DISCLAIMER!** <br>
+This document is about learning to spot similar vulnerabilities - not repeating existing deep dives. If you wish to deepen your understanding please do further research and look at the credit section below to learn more. <br>
 This write-up is meant to get you the context of the attack and learn how to spot similar issues in your future audits/bug bounties/protocol building. 
 
-This article assumes you already understand how these work:
+**This article assumes you already understand how these work:** <br>
 - AMMs/CLMMs
 - Tick Math for AMM protocols
 - Flashloans 
 - Bit Shifting and Masking
 
 If you are not familiar with the above, there are plenty of great resources that are not Move-specific (and do not need to be). You can head over to Cyfrin Updraft or search on YouTube for these terms to learn more. 
+
+---
 
 ## Why is this Important for Move Security
 This is the biggest hack in the Move ecosystem to date. Learning about this hack is super important for all of us to stay more security-focused as engineers. It also involves a misconception about Move which is described below. 
@@ -44,6 +46,8 @@ This caused the system to believe the LP provided far more liquidity than they a
 
 Again, this write-up is not here to help you understand the hack, you can read other articles for that. But we as engineers want to know how to not make historical mistakes. Keep reading for that. 
 
+---
+
 ## Research & Audit-Level Lessons
 ### 1. Never Assume Move Is "Safe" From Overflows
 Arithmetic in Move generally reverts on overflow, but bit-level integer operations don’t get this automatic safety.
@@ -62,6 +66,8 @@ Try to see how unexpected inputs ruin the code.
 
 ### 4. CLMMs Tick Range is Super Important
 The attacker used a very narrow tick range to exploit the protocol. So when auditing CLMMs, always test extreme tick placements—especially very narrow ranges—because they dramatically increase intermediate values.
+
+---
 
 ## Credit
 - [Halborn](https://www.halborn.com/blog/post/explained-the-cetus-hack-may-2025)

@@ -14,7 +14,6 @@ This write-up is meant to get you the context of the attack and learn how to spo
 - Bit Shifting and Masking
 
 If you are not familiar with the above, there are plenty of great resources that are not Move-specific (and do not need to be). You can head over to Cyfrin Updraft or search on YouTube for these terms to learn more. 
-
 ---
 
 ## Why is this Important for Move Security

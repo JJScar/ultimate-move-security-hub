@@ -13,6 +13,7 @@ This write-up is meant to get you the context of the attack and learn how to spo
 - Basic Move / Sui concepts (objects, capabilities, shared vs owned objects)
 
 If you are not familiar with the above, there are plenty of great resources that are not Move-specific (and do not need to be). You can search for “oracle price manipulation” or “Sui Move permission validation” on YouTube or via blog posts.
+
 ---
 
 ## Why is this Important for Move Security
@@ -81,6 +82,7 @@ So if you see these functions, always make sure the returned answer is checked.
 
 ### 3. Audit Shared Objects for Unexpected Reachability
 Many protocols share objects publicly as it is needed for the protocols functionality. Audit how shared objects flow through the system. If anyone can access them, your permission checks must be airtight.
+
 ---
 
 ## Credit

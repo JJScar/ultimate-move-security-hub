@@ -19,3 +19,7 @@ The information will keep updating as the technology is still evolving. If you s
 | Specific Move Vulnerabilities | To learn for already found bugs |
 | [Historical Hacks](https://github.com/JJScar/ultimate-move-security-hub/tree/main/historical_hacks) | Learn from previous real exploits 
 | Education | Anything that did not fit exactly with the above goes here |
+
+## Connect
+I am available for any questions and help with your Move journey! If you are just starting out or are looking for an audit for your Move project please reach out:
+- [X](https://x.com/JJS_OnChain)

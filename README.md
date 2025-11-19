@@ -1,6 +1,9 @@
 # Ultimate Move Security Hub
 This is the best place to learn about Move Security. If you are a security researcher or a developer trying to be build safer code, this is the place for you. 
 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/d7fa669c-750e-4a24-bbaa-2e902186e375" />
+Don't be like that. Be secure. <br><br>
+
 Why read these docs? I am a security researcher with experience in Solidity and discovered Move. I have been almost solely focused on Move security for a while and want to help other understand the benefits and the risks that Move code has. 
 
 ***DM For Move Audits***

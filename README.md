@@ -16,7 +16,7 @@ The information will keep updating as the technology is still evolving. If you s
 | [Start Here](https://github.com/JJScar/ultimate-move-security-hub/tree/main/StartHere) | This section is you help you get started with Move Security and you are not sure what you're looking for |
 | Move Literature | If you're looking to learn more about Move and understand Move code / VM better |
 | Move Tooling | Here you can find tools to help you with your craft |
-| Move Versus | This section will help you understand what is different between Move and other ecosystem |
+| [Move Versus(https://github.com/JJScar/ultimate-move-security-hub/tree/main/move_versus)] | This section will help you understand what is different between Move and other ecosystem |
 | Protocol Deep Dives | If you wish to learn more about important Move protocols in the space |
 | Security Best Practices | For specific Move "gotchas" |
 | Specific Move Vulnerabilities | To learn for already found bugs |
